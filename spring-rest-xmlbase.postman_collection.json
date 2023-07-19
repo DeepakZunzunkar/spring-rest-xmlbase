@@ -1,0 +1,539 @@
+{
+	"info": {
+		"_postman_id": "b503b062-6ada-46cf-83db-95eb6d3a02b5",
+		"name": "spring-rest-xmlbase",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "add customer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":3,\r\n    \"name\":\"akshay\",\r\n    \"contact\":\"753951456852\",\r\n    \"address\":\"chanda\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/spring-rest-xmlbase/customer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"spring-rest-xmlbase",
+						"customer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all customer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/spring-rest-xmlbase/customer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"spring-rest-xmlbase",
+						"customer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get customer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/spring-rest-xmlbase/customer/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"spring-rest-xmlbase",
+						"customer",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete customer",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/spring-rest-xmlbase/customer/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"spring-rest-xmlbase",
+						"customer",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update customer",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":2,\r\n    \"name\":\"sandip\",\r\n    \"contact\":\"123456789\",\r\n    \"address\":\"gadchiroli\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/spring-rest-xmlbase/customer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"spring-rest-xmlbase",
+						"customer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get customer by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/spring-rest-xmlbase/customergetByid?cid=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"spring-rest-xmlbase",
+						"customergetByid"
+					],
+					"query": [
+						{
+							"key": "cid",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "way2  get all customer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/spring-rest-xmlbase/customer/way2/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"spring-rest-xmlbase",
+						"customer",
+						"way2",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "way2 add customer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":2,\r\n    \"name\":\"sandip\",\r\n    \"contact\":\"123456789\",\r\n    \"address\":\"gadchiroli\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/spring-rest-xmlbase/customer/way2/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"spring-rest-xmlbase",
+						"customer",
+						"way2",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "way2 get customer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/spring-rest-xmlbase/customer/way2/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"spring-rest-xmlbase",
+						"customer",
+						"way2",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "way2 delete customer",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/spring-rest-xmlbase/customer/way2/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"spring-rest-xmlbase",
+						"customer",
+						"way2",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "way2 update customer",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":2,\r\n    \"name\":\"sandip\",\r\n    \"contact\":\"951456\",\r\n    \"address\":\"yetapalli\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/spring-rest-xmlbase/customer/way2/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"spring-rest-xmlbase",
+						"customer",
+						"way2",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "way3  get all customer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/spring-rest-xmlbase/customer/way4/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"spring-rest-xmlbase",
+						"customer",
+						"way4",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "way3 add customer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":3,\r\n    \"name\":\"amol\",\r\n    \"contact\":\"954561131\",\r\n    \"address\":\"chanda\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/spring-rest-xmlbase/customer/way3/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"spring-rest-xmlbase",
+						"customer",
+						"way3",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "way3 get customer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/spring-rest-xmlbase/customer/way3/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"spring-rest-xmlbase",
+						"customer",
+						"way3",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "way3 delete customer",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/spring-rest-xmlbase/customer/way3/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"spring-rest-xmlbase",
+						"customer",
+						"way3",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "way3 update customer",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":3,\r\n    \"name\":\"amol\",\r\n    \"contact\":\"951456\",\r\n    \"address\":\"gadchiroli\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/spring-rest-xmlbase/customer/way3/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"spring-rest-xmlbase",
+						"customer",
+						"way3",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "way4  get all customer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/spring-rest-xmlbase/customer/way4/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"spring-rest-xmlbase",
+						"customer",
+						"way4",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "way4 add customer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":3,\r\n    \"name\":\"amol\",\r\n    \"contact\":\"954561131\",\r\n    \"address\":\"chanda\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/spring-rest-xmlbase/customer/way4/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"spring-rest-xmlbase",
+						"customer",
+						"way4",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "way4 get customer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/spring-rest-xmlbase/customer/way4/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"spring-rest-xmlbase",
+						"customer",
+						"way4",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "way4 update customer",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":3,\r\n    \"name\":\"amol\",\r\n    \"contact\":\"506\",\r\n    \"address\":\"gadchiroli\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/spring-rest-xmlbase/customer/way4/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"spring-rest-xmlbase",
+						"customer",
+						"way4",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "way4 delete customer",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/spring-rest-xmlbase/customer/way4/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"spring-rest-xmlbase",
+						"customer",
+						"way4",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
